@@ -7,6 +7,6 @@ for i in range (N):
             row[j] = T[i-1][j-1]+T[i-1][j]
     T.append(row)            
 
-for k in T:
-    print (*k)
-
+for k in range(len(T)):
+    print (' ' * (N - k), end = '')
+    print(*T[k])
